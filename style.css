@@ -45,7 +45,7 @@ html {
 
 body {
   font-family: var(--body-font);
-  background-image: url(https://wallpapershome.com/images/wallpapers/macos-big-sur-1280x720-dark-wwdc-2020-22655.jpg);
+  background-image: url("images/wp4275519.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -55,6 +55,7 @@ body {
   padding: 2em;
   width: 100%;
   height: 100vh;
+  overflow: hidden;
 }
 @media screen and (max-width: 480px) {
   body {
@@ -124,7 +125,10 @@ body.light-mode .video-bg:before {
   top: 0;
   width: 100%;
   height: 100vh;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.72) 0%, rgba(255, 255, 255, 0.45) 100%);
+  background: linear-gradient(180deg,  rgba(255, 255, 255, 0.45) 100%);
+
+/* ishte :  background: linear-gradient(180deg, rgba(64, 61, 61, 0.72) 0%, rgba(255, 255, 255, 0.45) 100%); */
+
   -webkit-backdrop-filter: saturate(3);
           backdrop-filter: saturate(3);
 }
@@ -136,13 +140,13 @@ body.light-mode .video-bg:before {
   height: 90vh;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
   width: 100%;
   border-radius: 14px;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   font-size: 15px;
   font-weight: 500;
+  overflow: scroll;
 }
 
 .header {
@@ -163,7 +167,8 @@ body.light-mode .video-bg:before {
 .header-menu {
   display: flex;
   align-items: center;
-}
+  overflow: hidden;
+} 
 .header-menu a {
   padding: 20px 30px;
   text-decoration: none;
@@ -881,5 +886,3 @@ body.light-mode .video-bg:before {
   background: var(--scrollbar-bg);
   border-radius: 10px;
 }
-
-

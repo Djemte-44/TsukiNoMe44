@@ -1,0 +1,112 @@
+
+html {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+   }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("images/f4icNV.jpg");
+    
+  }
+ 
+  
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+   
+    
+    margin: auto;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    box-shadow: 0 0 0 2px rgb(134 140 160 / 2%);
+    border-radius: 4px;
+    font-family: var(--body-font);
+   
+  
+    font-family: var(--body-font);
+  }
+  a{
+    color: white;
+    font-family: var(--body-font);
+    
+  
+  }
+  #sgnup{
+    margin: 412px;
+  }
+
+  button:hover {
+    opacity: 0.8;
+  }
+  
+ 
+  
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+
+  .container {
+    padding: 16px;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+   
+  }
+   .cancelbtn {
+    background-color: black;
+    border: none;
+    padding: 8px 26px;
+    color: #fff;
+    border-radius: 20px;
+    margin-top: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    white-space: nowrap;
+  }
+  
+  .cancelbtn:hover,.content-button:hover{
+    background-color: white;
+    color: #000;
+  
+  }
+  .containerContact input{
+  
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    box-shadow: 0 0 0 2px rgb(134 140 160 / 2%);
+    border-radius: 4px;
+    font-family: var(--body-font);
+   
+  
+    font-family: var(--body-font);
+  }
+  #subject {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+  }
