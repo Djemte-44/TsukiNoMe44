@@ -72,8 +72,7 @@ button:hover {
 }
 
 img.avatar {
-  width: 15%;
-  border-radius: 50%;
+  
 }
 
 .container {
@@ -127,4 +126,8 @@ span.psw {
  
 
   font-family: var(--body-font);
+}
+
+.calciohub{
+  width: 5%;
 }

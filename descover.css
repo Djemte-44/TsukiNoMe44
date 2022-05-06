@@ -29,6 +29,7 @@ body {
   flex-wrap: wrap;
   gap: 0.5em;
   margin-bottom: 1em;
+  z-index: 2;
 }
 
 .comp-select .comp input {
@@ -47,6 +48,7 @@ body {
 .comp-select .comp input:checked + label {
   box-shadow: 0 0 0.25em 0.25em #3a6df0;
   opacity: 1;
+  z-index: 2;
 }
 .comp-select .comp label img {
   width: 2.2em;
@@ -162,4 +164,10 @@ body {
   .comp-table .lost {
     display: none;
   }
+}
+.menu-link{
+  z-index: 1;
+}
+.menu-link:hover{
+  z-index: 1;
 }
