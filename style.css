@@ -516,6 +516,7 @@ body.light-mode .video-bg:before {
   cursor: pointer;
   transition: 0.3s;
   white-space: nowrap;
+  text-decoration: none;
 }
 
 .content-wrapper-img {

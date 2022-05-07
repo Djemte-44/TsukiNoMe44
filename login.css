@@ -40,11 +40,18 @@ a{
   color: white;
   font-family: var(--body-font);
   text-decoration: none;
-  
 
 }
 #sgnup{
-  margin: 412px;
+  /* margin: 412px; */
+  /* background-color: var(--dropdown-bg);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-family: var(--body-font); */
 }
 /* button {
   background-color: var(--dropdown-bg);
@@ -72,16 +79,21 @@ button:hover {
   margin: 24px 0 12px 0;
 }
 
-img.avatar {
+/* img.avatar {
   
-}
+} */
 
-.container {
-  padding: 16px;
+.container2 {
+  margin-top: 2%;
+  padding-inline: 35%;
+  margin-left: auto;
+  display:flex;
+  justify-content: space-around;
+  text-decoration: none;
 }
 
 span.psw {
-  float: right;
+  /* float: right; */
   padding-top: 16px;
 }
 
@@ -91,21 +103,24 @@ span.psw {
      display: block;
      float: none;
   }
-  .cancelbtn {
-     width: 100%;
-  }
+  
  
 }
  .cancelbtn {
   background-color: black;
   border: none;
-  padding: 8px 26px;
+  padding: 10px 26px;
   color: #fff;
   border-radius: 20px;
-  margin-top: 16px;
+  margin-block: 2%;
   cursor: pointer;
   transition: 0.3s;
   white-space: nowrap;
+  margin-inline: 35rem;
+display: flex; 
+ justify-content: center;
+ align-items: center;
+ padding: auto;
 }
 
 .cancelbtn:hover,.content-button:hover{
@@ -115,8 +130,8 @@ span.psw {
 }
 .containerContact input{
 
-  width: 50%;
-  padding: 12px 20px;
+width: 50%;
+padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
@@ -131,4 +146,14 @@ span.psw {
 
 .calciohub{
   width: 5%;
+}
+
+.or-text{
+  font-weight: bold;
+  font-family: inherit;
+  color:white;
+}
+.container5{
+  width: 90%;
+  margin-inline: auto;
 }
