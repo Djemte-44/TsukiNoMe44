@@ -98,6 +98,9 @@ body {
   border-collapse: collapse;
 }
 .comp-table tbody tr:hover {
+  background-color: rgb(10, 9, 9);
+}
+.light-mode .comp-table tbody tr:hover{
   background-color: rgb(204, 204, 204);
 }
 .comp-table tbody tr:not(:last-child) {
@@ -165,9 +168,9 @@ body {
     display: none;
   }
 }
-.menu-link{
-  z-index: 1;
-}
-.menu-link:hover{
-  z-index: 1;
+
+
+.light-mode .comp-name{
+  color: black;
+
 }

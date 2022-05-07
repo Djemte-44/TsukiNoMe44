@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
-    
+    <style>
+.light-mode .comp-name{
+  color: black;
+}
+tbody tr:hover{
+  color: black;
+}
+    </style>
   <meta charset="UTF-8">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
@@ -32,13 +39,14 @@
     <div class="header">
      <div class="menu-circle"></div>
      <div class="header-menu">
-      <a class="menu-link " href="main.html">Home</a>
+      <a class="menu-link" href="main.html">Players</a>
       <a class="menu-link " href="teams.html">Teams</a>
       <a class="menu-link is-active" href="descover.html">Standings</a>
       <a class="menu-link " href="contact.html">Contact</a>
      </div>
     
 
+ 
 
 <!-- profile pic & notification -->
      <div class="header-profile">
@@ -55,11 +63,12 @@
      </div>
     </div>
     
-
+    
 
 
 <!-- content -->
-
+<div class="content-section">
+  <div class="content-section-title">Standings</div>
 <div class="container">
     <div class="comp-select"></div>
     <div class="comp-title"><img src="" class="comp-flag"><h1 class="comp-name"></h1></div>
@@ -84,8 +93,10 @@
     </div>
     <div class="comp-loading">Loading... </br><img src="https://icon-library.com/images/loading-icon-transparent-background/loading-icon-transparent-background-12.jpg"></div>
   </div>
+  </div>
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="script.js"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./descover.js"></script>
+ 
 </body>
 </html>

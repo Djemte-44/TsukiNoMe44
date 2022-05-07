@@ -39,6 +39,7 @@ input[type=text], input[type=password] {
 a{
   color: white;
   font-family: var(--body-font);
+  text-decoration: none;
   
 
 }
