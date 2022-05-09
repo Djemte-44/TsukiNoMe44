@@ -111,6 +111,7 @@ display: flex;
  justify-content: center;
  align-items: center;
  padding: auto;
+ 
 }
 
 .cancelbtn:hover,.content-button:hover{

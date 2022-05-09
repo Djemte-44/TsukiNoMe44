@@ -8,7 +8,10 @@
 
 
 
-
+<style>   
+    label{color:white;}
+  .light-mode label{color:black;}
+  </style>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="images\onepiece.png">
@@ -71,11 +74,13 @@
       <option value="usa">USA</option>
     </select>
 <br><br>
-    <label for="subject">Subject</label>
+    <label for="subject">Subject</label> <br>
     <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 <br><br>    
 
     <button type="submit" class="content-button" value="Submit">Submit</button>
+    <input type="reset" class="cancelbtn" value="Cancel"></input>
+
   </form>
 </div>
    </div> 

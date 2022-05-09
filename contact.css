@@ -110,8 +110,9 @@ html {
     font-size: 16px;
     resize: none;
   }
-  /* #country{
-
-
-    
-  } */
+  #country{
+  border-radius: 10px;
+  font-family: inherit;
+padding:3px;  
+  
+  }
