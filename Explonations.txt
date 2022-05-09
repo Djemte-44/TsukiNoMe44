@@ -1,0 +1,21 @@
+ 
+ Here are some explonations about the functions that we used:
+ 
+ 
+ 
+ address:main.html
+ function: myFunction()
+ 
+ The code starts by getting the input element from the document.
+ It then uses a function to convert all lowercase letters into uppercase, and it loops through each of the li elements in ul.
+ For each of these li elements, it gets an a element with textContent or innerText as its value.
+ If this value is equal to filter, then it sets that li's style display property to none; otherwise, it sets its style display property to none.
+ The code starts by getting the input element from the document.
+ It then uses a function to convert all lowercase letters into uppercase, and it loops through each of the li elements in ul.
+ For each of these li elements, it gets an a element with textContent or innerText as its value.
+ If this value is equal to filter, then it sets that li's style display property to none; otherwise, it sets its style display property to none
+ The code will loop through all the li elements in the ul and change their display to none if they contain a text value that is equal to or greater than the filter.
+
+
+
+
