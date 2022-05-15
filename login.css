@@ -7,20 +7,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-image: url("images/wp4275519.jpg");
 }
-/* form {
-    background-color: var(--theme-bg-color);
-    max-width: 1250px;
-    max-height: 860px;
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    width: 100%;
-    border-radius: 14px;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    font-size: 15px;
-    font-weight: 500;} */
+
 
 input[type=text], input[type=password] {
   width: 100%;
@@ -32,10 +19,8 @@ input[type=text], input[type=password] {
   box-shadow: 0 0 0 2px rgb(134 140 160 / 2%);
   border-radius: 4px;
   font-family: var(--body-font);
- 
-
-  font-family: var(--body-font);
 }
+
 a{
   color: white;
   font-family: var(--body-font);
@@ -43,35 +28,20 @@ a{
 
 }
 
-/* button {
-  background-color: var(--dropdown-bg);
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  font-family: var(--body-font);
-} */
+
 
 button:hover {
   opacity: 0.8;
 }
 
-/* .cancelbtn {
-  width: auto;
-  padding: 10px 18px;
-  background-color: #f44336;
-} */
+
 
 .imgcontainer {
   text-align: center;
   margin: 24px 0 12px 0;
 }
 
-/* img.avatar {
-  
-} */
+
 
 .container2 {
   margin-top: 2%;

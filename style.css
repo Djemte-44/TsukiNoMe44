@@ -92,6 +92,8 @@ img {
   z-index: 3;
   cursor: pointer;
 }
+
+/* the moon in the dark-light mode  */
 .dark-light svg {
   width: 24px;
   flex-shrink: 0;
@@ -208,9 +210,9 @@ body.light-mode .video-bg:before {
 .menu-circle {
   width: 15px;
   height: 15px;
-  background-color: #f96057;
+  background-color: rgb(28, 40, 51);
   border-radius: 50%;
-  box-shadow: 24px 0 0 0 #f8ce52, 48px 0 0 0 #5fcf65;
+  box-shadow: 24px 0 0 0 rgb(255, 191, 0), 48px 0 0 0 rgb(124, 62, 138);
   margin-right: 195px;
   flex-shrink: 0;
 }

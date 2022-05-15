@@ -1,9 +1,22 @@
+ A framework in programming is a tool that provides ready-made components or solutions that are customized in order to speed up development.
+ A framework may include a library, but is defined by the principle of inversion of control
+ 
+ (we used ajax so it is not a typical framework, it is a webkit of google)
+ AJAX stands for Asynchronous JavaScript And XML. In a nutshell, it is the use of the XMLHttpRequest object to communicate with servers. 
+ It can send and receive information in various formats, including JSON, XML, HTML, and text files.
+  Ajax is a technique using JavaScript to construct an XMLHttpRequest.
+ 
+ 
+ 
+ 
+ 
+ 
  
  Here are some explonations about the functions that we used:
  
  
  
- address:main.html
+ address:script.js
  function: myFunction()
  
  The code starts by getting the input element from the document.
@@ -16,6 +29,153 @@
  If this value is equal to filter, then it sets that li's style display property to none; otherwise, it sets its style display property to none
  The code will loop through all the li elements in the ul and change their display to none if they contain a text value that is equal to or greater than the filter.
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+ 
+ address:login.html
+ function: showPass()
+
+(show password)
+ The code is a function that changes the type of an input element to text or password.
+ The code first gets the input element by using document.getElementById("myInput").
+ Then, if it is a password field, it sets its type to "password".
+ If not, then it sets its type to "text".
+ The function starts with var x = document.getElementById("myInput"); which means that we are getting the input element from the DOM and storing it in variable x.
+ Next, we check if this is a password field by looking at its type property (x.type).
+ If so, then we set its type property to "password" and otherwise set its type property to "text".
+ The code attempts to change the type of input from password to text.
+
+ ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  
+  
+  
+  
+  address:descover.js
+function compLoading(load)
+
+
+The code is a function that is called when the user clicks on the button.
+ The function compiles an element with class "load" and removes it if there is no such class.
+ The code is meant to add a class name "load" to the element when the load event is triggered. (Loading when choose leauge at standings)
 
 
 
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ 
+
+
+address:descover.js
+function createTeamTableRow(team)
+
+ The code creates a table row with the class comp-table-team-row.
+ The code then creates an innerHTML for the table row that contains three columns: rank, team, and played.
+ The first column is called rank and it displays the team's ranking in its league.
+ The second column is called team and it displays the name of the team followed by their logo image from their website.
+ The third column is called played and it displays how many matches each team has won, drawn, lost, scored goals for, or against one another during this season so far.
+ The code creates a table row with the following information: Rank - The rank of the team.
+ Team - A link to the team's logo and name.
+ Matches Played - The number of matches played by the team.
+ Matches Won - The number of matches won by the team.
+ Matches Drawn - The number of matches drawn by the team.
+ Matches Lost - The number of matches lost by the team.
+ Goals For- Number of goals scored for this particular match, minus opponent's goals scored in that same match.
+ Goals Against- Number of goals conceded by this particular match, minus opponent's goals conceded in that same match.
+ Points- Total points accumulated
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+address:descover.js
+loadTableData(competitions[0])
+
+ The code starts by creating a new div element and adding the class "comp" to it.
+ Then, it creates an input element with type radio and name "comp".
+ It also sets its id attribute to compId.
+ Next, it creates a label element with for attribute set to compId.
+ Lastly, it creates an img element with src set to the logo of the competition that is being analyzed (in this case, the first one).
+ The code then appends two elements: a button and a label.
+ The button has been created as an empty div which will be filled in later on when clicked on by clicking on either of its buttons or pressing enter/return key while hovering over them.
+ The label is created as well but only contains text at this point because there is no image yet attached to it.
+ When clicked on by clicking anywhere else outside of its area or pressing enter/return key while hovering over them, they both call loadTableData() function which loads data from competitions table into their respective inputs (the input field named "comp").
+ The code is to create a select box for the user to choose from.
+ The code above will create an input element with the name "comp" and a label for that input element.
+ The input element will have a radio button next to it, which will be checked if the index of the chosen item is 0.
+ The label created by this code will also have an event listener that calls loadTableData(competitions[0]) when clicked on.
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+address:descover.js
+async function loadTableData(comp)
+
+
+The code starts by creating a function called loadTableData.
+ This function is asynchronous and takes in an argument of true, which means that the code will continue to run asynchronously until it reaches false.
+ The first thing this function does is create a variable called compLoading, which starts out with the value of true.
+ Then it creates an empty table body element on the page using innerHTML and appends each team's name onto that table body element one at a time.
+ Next, it creates variables for two elements: compNameEl and compFlagEl.
+ These are used later in the code when fetching data from a URL (which you'll see soon).
+ Next, we have another function called competitionTableUrl(phaseId, langId) which returns all of the information about what phase/language combination was entered into our database for this competition.
+ We then use await response.json() to get back JSON data from this URL so we can iterate through each entry in our database and append them onto our table body element one at a time using createTeamTableRow().
+ Finally, we call async function loadTableData(comp) once more with false as its argument because now there are no more entries left to add onto our table body element
+ The code will fetch the data for a particular competition and append it to the table.
+ The code above will also add a loading indicator to the table body while it is being fetched.
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+address:script.js
+const toggleButton.......
+
+(light mode and dark mode)
+ The code starts by declaring a variable called toggleButton.
+ This is the selector for an element with class dark-light.
+ The code then adds an event listener to this button that will be triggered when it is clicked, which changes the body's classList from light-mode to dark-mode.
+ The code will toggle the class "light-mode" on and off.
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+CSS
+usage of :
+
+@media screen and (max-width: 945px)
+https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+
+
+:root
+https://www.w3schools.com/cssref/sel_root.asp
+
+
+
+@import url
+https://www.w3schools.com/cssref/pr_import_rule.asp
+
+The @import rule allows you to import a style sheet into another style sheet.
+
+The @import rule must be at the top of the document (but after any @charset declaration).
+
+The @import rule also supports media queries, so you can allow the import to be media-dependent.
+
+
+
+
+--body-font
