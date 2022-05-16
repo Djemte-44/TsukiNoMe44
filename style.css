@@ -45,7 +45,7 @@ html {
 
 body {
   font-family: var(--body-font);
-  background-image: url("images/wp4275519.jpg");
+  /* background-image: url("images/wp4275519.jpg"); */
   background-size: cover;
   background-position: center;
   display: flex;

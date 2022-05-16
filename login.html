@@ -2,7 +2,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="login.css">
-   
+    <style>   
+      label{color:white;}
+    .light-mode label{color:black;}
+    </style>
  
     <link rel="link" href="main.html">
     <head>
@@ -32,7 +35,7 @@
             
               <div class="container5">
                 <label for="uname"><b>Username</b></label>
-                <input type="text" placeholder="Enter Username" name="123" required>
+                <input type="text" placeholder="Enter Username" name="" required>
             
                 <label for="psw"><b>Password</b></label>
                 <input type="password" placeholder="Enter Password" name="password" id="myInput" required> 
@@ -45,6 +48,7 @@
                 <div class="container2" >
                     <button class="content-button"><a href="loading.html" class="" >Login</a></button>    <h3 class="or-text">or</h3>
                     <span class="content-button"> <a href="register.html" id="sgnup">Sign up</a></span>
+                    <button id="myButton" class="content-button" >ADMIN</button>
                   </div>
                   <input type="reset" class="cancelbtn" value="Cancel"></input>
             </form>
@@ -60,6 +64,18 @@
   }
 }
             </script>
+
+<script type="text/javascript">
+
+
+  document.getElementById("myButton").onclick = function () {
+    
+      location.href = "admin.html";
+  };
+</script>
+
+
+
           </body>
             
 
