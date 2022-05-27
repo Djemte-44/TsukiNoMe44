@@ -549,12 +549,12 @@ body.light-mode .video-bg:before {
 .content-section ul {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 80%;
   height: 100%;
   justify-content: space-around;
   background-color: var(--content-bg);
   padding-left: 0;
-  margin: 0;
+  margin: 10%;
   border-radius: 14px;
   border: 1px solid var(--theme-bg-color);
   cursor: pointer;
@@ -817,7 +817,7 @@ body.light-mode .video-bg:before {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  width: calc(100% + 20px);
+  width: calc(97% + 20px);
 }
 
 .app-card {

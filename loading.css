@@ -27,4 +27,5 @@ path{
 h3{
 	color:white;
 	text-align: center;
+	font-family: var(--body-font);
 }

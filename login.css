@@ -9,10 +9,10 @@ body {
 }
 
 
-input[type=text], input[type=password] {
-  width: 100%;
+input[type=text], input[type=password], input[type=email]{
+  width: 40%;
   padding: 12px 20px;
-  margin: 8px 0;
+ 
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
@@ -116,5 +116,5 @@ padding: 12px 20px;
 }
 .container5{
   width: 90%;
-  margin-inline: auto;
+  margin: 2% 32%;
 }

@@ -241,5 +241,7 @@ function init() {
 
 init();
 setTimeout(function(){
-              window.location.href = "main.html";
+              window.location.href = "main.php";
            }, 8500    );
+
+  alert(window.location.href);

@@ -122,6 +122,7 @@ padding:3px;
     display: flex;
     gap: 30px;
     align-items: center;
+    margin-left: 35%;
   }
   
   .social a {

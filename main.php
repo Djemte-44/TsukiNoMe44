@@ -1,3 +1,10 @@
+<?php
+
+session_start();
+
+
+?>
+
 
 <!DOCTYPE html>
 <html>
@@ -15,12 +22,16 @@
 
   }
 
-  h3 {
+  h3 ,h1 {
     text-align: center;
     color: white;
   }
 
   .light-mode h3 {
+    color: black;
+
+  }
+  .light-mode h1 {
     color: black;
 
   }
@@ -83,14 +94,15 @@
       
         <path d="M448.773 235.551A135.893 135.893 0 00451 211c0-74.443-60.557-135-135-135-47.52 0-91.567 25.313-115.766 65.537-32.666-10.59-66.182-6.049-93.794 12.979-27.612 19.013-44.092 49.116-45.425 82.031C24.716 253.788 0 290.497 0 331c0 7.031 1.703 13.887 3.006 20.537l.015.015C12.719 400.492 56.034 436 106 436h300c57.891 0 106-47.109 106-105 0-40.942-25.053-77.798-63.227-95.449z" />
   
-        <a href="login.php"><img class="profile-img" src="images\onepiece.png" alt=""  ></a>
+        <a href="logout.php"><img class="profile-img" src="images\onepiece.png" alt=""  ></a>
       </div>
      </div>
      
 
     <!-- content -->
-    <!-- <?php echo "<h1>Welcome " . $_SESSION['username'] . "</h1>"; ?>
-    <a href="logout.php">Logout</a> -->
+ <?php echo"<h1>Welcome @".$_SESSION['username']." "." !</h1>"; ?>
+
+    
     <div class="content-section">
       <div class="content-section-title">Players</div>
       <h3>Best players for 21/22 season: </h3>
@@ -104,8 +116,7 @@
         <li><a href="https://www.transfermarkt.com/lautaro-martinez/profil/spieler/406625">Lautaro Martinez </a></li>
         <li><a href="https://www.transfermarkt.com/ivan-perisic/profil/spieler/42460">Ivan Perišić </a></li>
         <li><a href="https://www.transfermarkt.com/rafael-leao/profil/spieler/357164">Rafael Leão </a></li>
-        <li><a href="https://www.transfermarkt.com/marcelo-brozovi%C4%87/profil/spieler/156617">Marcelo Brozović </a>
-        </li>
+        <li><a href="https://www.transfermarkt.com/marcelo-brozovi%C4%87/profil/spieler/156617">Marcelo Brozović </a></li>
         <li><a href="https://www.transfermarkt.com/mike-maignan/profil/spieler/182906">Mike Maignan </a></li>
         <li><a href="https://www.transfermarkt.com/achraf-hakimi/profil/spieler/398073">Achraf Hakimi </a></li>
         <li><a href="https://www.transfermarkt.com/erling-haaland/profil/spieler/418560">Erling Braut Håland </a></li>
