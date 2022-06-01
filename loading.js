@@ -244,4 +244,4 @@ setTimeout(function(){
               window.location.href = "main.php";
            }, 8500    );
 
-  alert(window.location.href);
+  

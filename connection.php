@@ -1,10 +1,10 @@
 
 <?php 
 
-$server = "localhost:3307";
+$server = "localhost";
 $user = "root";
 $password = "";
-$database = "login_register";
+$database = "calcio";
 
 $conn = mysqli_connect($server, $user, $password, $database);
 

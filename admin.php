@@ -1,3 +1,10 @@
+<?php
+include 'connection.php';
+session_start();
+
+
+?>
+
 <!DOCTYPE html>
 <html>
   <style>
@@ -16,17 +23,39 @@
   color: black;
  
 }
-h3{
-  text-align: center;
-  color: white;
-}
-.light-mode h3 {
-  color: black; 
- 
-}
+h3 ,h1 {
+    text-align: center;
+    color: white;
+  }
+
+  .light-mode h3 {
+    color: black;
+
+  }
+  .light-mode h1 {
+    color: black;
+
+  }
 p{
   text-align: center;
   color: white;
+}
+li{
+  display:flex;
+}
+li .content-button1 {
+  background-color: #3a6df0;
+  border: none;
+  padding: 8px 26px;
+  color: #fff;
+  border-radius: 20px;
+  margin-top: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  white-space: nowrap;
+  text-decoration: none;
+  position:relative;
+left:500px;
 }
 
   </style>
@@ -59,6 +88,11 @@ p{
     <div class="header">
      <div class="menu-circle"></div>
      <div class="header-menu">
+     <div class="header-menu">
+        <a class="menu-link is-active" href="admin.php">Home</a>
+        <a class="menu-link " href="createPlayer.php">Add</a>
+       
+      </div>
       
      </div>
      
@@ -80,39 +114,52 @@ p{
      </div>
     </div>
     
+
+<?php echo"<h1>Welcome ".$_SESSION['username']." "." !</h1>"; ?>
 <!-- content -->
-
-<div class="content-section">
-<div class="content-section-title">Players</div>
-<h3>Best players for 21/22 season: </h3>
-
-
-<ul id="myUL">
-  <li><a href="https://www.transfermarkt.com/karim-benzema/profil/spieler/18922">Karim Benzema</a></li>
-  <li><a href="https://www.transfermarkt.com/robert-lewandowski/profil/spieler/38253">Robert Lewandowski</a></li>
-  <li><a href="https://www.transfermarkt.com/kylian-mbappe/profil/spieler/342229">Kylian Mbappe</a></li>
-  <li><a href="https://www.transfermarkt.com/kevin-de-bruyne/profil/spieler/88755">Kevin De Bruyne</a></li>
-  <li><a href="https://www.transfermarkt.com/luka-modric/profil/spieler/27992">Luka Modric</a></li>
-  <li><a href="https://www.transfermarkt.com/heung-min-son/profil/spieler/91845">Son Heung-min </a></li>
-  <li><a href="https://www.transfermarkt.com/lautaro-martinez/profil/spieler/406625">Lautaro Martinez </a></li>
-  <li><a href="https://www.transfermarkt.com/ivan-perisic/profil/spieler/42460">Ivan Perišić </a></li>
-  <li><a href="https://www.transfermarkt.com/rafael-leao/profil/spieler/357164">Rafael Leão </a></li>
-  <li><a href="https://www.transfermarkt.com/marcelo-brozovi%C4%87/profil/spieler/156617">Marcelo Brozović </a></li>
-  <li><a href="https://www.transfermarkt.com/mike-maignan/profil/spieler/182906">Mike Maignan </a></li>
-  <li><a href="https://www.transfermarkt.com/achraf-hakimi/profil/spieler/398073">Achraf Hakimi </a></li>
-  <li><a href="https://www.transfermarkt.com/erling-haaland/profil/spieler/418560">Erling Braut Håland </a></li>
-  <li><a href="https://www.transfermarkt.com/thibaut-courtois/profil/spieler/108390">Thibaut Courtois </a></li>
-  <li><a href="https://www.transfermarkt.com/mohamed-salah/profil/spieler/148455">Mohamed Salah </a></li>
-  <li><a href="https://www.transfermarkt.com/sadio-mane/profil/spieler/200512">Sadio Mané </a></li>
-</ul>
-<br><br><br><br>
+<div class="container2" >
+<a  href="individualPlayer.php" class="content-button1">see more</a>
 </div>
+<div class="content-section">
+      <div class="content-section-title">Players</div>
+      <h3>Best players for 21/22 season: </h3>
+      <ul id="myUL">
+<?php
+$sql = "select * from players";
+       $result= mysqli_query($conn,$sql);
+       $resultCheck= mysqli_num_rows($result);
+
+
+       if($resultCheck>0){
+         while($row= mysqli_fetch_assoc($result)){
+           // $row= mysqli_fetch_assoc($result);
+          
+            ?>
+
+  <li><a href=""><?php echo $row["name"]; ?></a></li>
+
+
+
+
+<?php      
+   
+  }
+  }
+  ?>
+
+</ul>
+</div>
+
+      
+      </div>
 
 
 
 <!-- script -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script  src="./script.js"></script>
+
+
    
 
       

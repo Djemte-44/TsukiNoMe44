@@ -89,7 +89,7 @@ display: flex;
   color: #000;
 
 }
-.containerContact input{
+.containerContact input {
 
 width: 50%;
 padding: 12px 20px;
@@ -104,6 +104,8 @@ padding: 12px 20px;
 
   font-family: var(--body-font);
 }
+
+
 
 .calciohub{
   width: 5%;

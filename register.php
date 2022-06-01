@@ -116,6 +116,9 @@ if (isset($_POST['submit'])) {
                     <br><br>
                     <button  name="submit" class="content-button">Register</button>
                     <button type="button" class="cancelbtn" id="myButton4">Cancel</button> 
+                    <p>
+		Already a member? <a href="login.php">Sign in</a>
+	</p>
                   </div>
               <div class="container2" >
                 
@@ -155,11 +158,7 @@ else {
 }
 
 
-
-document.getElementById("myButton4").onclick = function () {
-    
-    location.href = "login.php";
-};  
+ 
 
 
           </script>

@@ -13,13 +13,19 @@ if (isset($_SESSION['email'])) {
 if (isset($_POST['submit'])) {
 	$username = $_POST['username'];
 	$password = md5($_POST['password']);
-
+ $admin = $_POST['admin'];
 	$sql = "SELECT * FROM users WHERE username='$username' AND password='$password'";
 	$result = mysqli_query($conn, $sql);
+
 	if ($result->num_rows > 0) {
 		$row = mysqli_fetch_assoc($result);
 		$_SESSION['username'] = $row['username'];
-		header("Location: loading.html");
+    if ($admin=1){
+      // $row = mysqli_fetch_assoc($result);
+      // $_SESSION['username'] = $row['username'];
+      header("Location: admin.php");
+    }
+	 else{header("Location: loading.html");}	
 	} else {
 		echo "<script>alert('Woops! username or Password is Wrong.')</script>";
 	}
@@ -79,9 +85,9 @@ if (isset($_POST['submit'])) {
             
                 <div class="container2" >
                   <button id="myButton1" name="submit" class="content-button" >Login</button>
-                    <h3 class="or-text">or</h3>
+               
                     <button id="myButton2" class="content-button" >Sign up</button>
-                    <button id="myButton" class="content-button" >ADMIN</button>
+                 
                     
                   </div>
                   <input type="reset" class="cancelbtn" value="Cancel"></input>
@@ -93,10 +99,6 @@ if (isset($_POST['submit'])) {
 <script type="text/javascript">
 
 
-  document.getElementById("myButton").onclick = function () {
-    
-      location.href = "admin.html";
-  };
 
 
 
@@ -118,6 +120,69 @@ document.getElementById("myButton2").onclick = function () {
           </body>
             
 
+
+          <?php 
+
+include 'connection.php';
+
+session_start();
+
+error_reporting(0);
+
+
+if (isset($_SESSION['email'])) {
+    header("Location: login.php");
+}
+
+if (isset($_POST['submit'])) {
+	$username = $_POST['username'];
+	$password = md5($_POST['password']);
+  $admin= 0;
+
+
+	$sql = "SELECT * FROM users WHERE username='$username' AND password='$password' AND admin='$admin'";
+	$result = mysqli_query($conn, $sql);
+	if ($result->num_rows > 0) {
+		$row = mysqli_fetch_assoc($result);
+		$_SESSION['username'] = $row['username'];
+		header("Location: loading.html");
+
+    if ($admin == 1) {
+      $row = mysqli_fetch_assoc($result);
+      $_SESSION['username'] = $row['username'];
+      header("Location: admin.php");
+    }
+	}
+   else {
+		echo "<script>alert('Woops! username or Password is Wrong.')</script>";
+	}
+  
+
+}
+
+else {
+  if (isset($_POST['submit'])) {
+    $username = $_POST['username'];
+    $password = md5($_POST['password']);
+    $admin= 1;
+  
+  
+    $sql = "SELECT * FROM users WHERE username='$username' AND password='$password' AND admin='$admin'";
+    $result = mysqli_query($conn, $sql);
+    if ($result->num_rows > 0) {
+      $row = mysqli_fetch_assoc($result);
+      $_SESSION['username'] = $row['username'];
+      header("Location: admin.html");
+  
+      
+    }
+     
+    
+  
+  }
+}
+
+?>
 
 
 </html>
